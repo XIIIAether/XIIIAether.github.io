@@ -2,108 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Contact - Chillspot</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Contact Us</title>
-
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      /* Navigation bar */
-      nav {
-        background-color: #333;
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-      }
-
-      /* Logo image */
-      .logo img {
-        height: 40px;
-        width: auto;
-      }
-
-      /* Container for nav links */
-      .nav-links {
-        margin-left: auto;
-      }
-
-      /* Navigation links */
-      .nav-links a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-      }
-
-      .nav-links a:hover {
-        text-decoration: underline;
-      }
-
-      /* Page content */
-      .content {
-        padding: 20px;
-      }
-
-      /* Contact form styling */
-      .contact-info, .contact-form, .social-links {
-        margin-bottom: 20px;
-        max-width: 500px;
-      }
-
-      .contact-form input,
-      .contact-form textarea {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-
-      .contact-form button {
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        border-radius: 4px;
-      }
-
-      .contact-form button:hover {
-        background-color: #555;
-      }
-
-      /* Social media links */
-      .social-links a {
-        display: inline-block;
-        margin-right: 15px;
-        text-decoration: none;
-        color: white;
-        background-color: #4267B2; /* Facebook blue */
-        padding: 8px 12px;
-        border-radius: 5px;
-        font-weight: bold;
-      }
-
-      .social-links a.messenger {
-        background-color: #0084FF; /* Messenger blue */
-      }
-
-      .social-links a:hover {
-        opacity: 0.8;
-      }
-    </style>
+    <!-- ALL INLINE STYLE DELETED -->
   </head>
 
   <body>
     <!-- Navigation Bar -->
-    <nav>
+    <nav style="z-index: 1000; position: relative;">
       <div class="logo">
-        <img src="logo.png" alt="Website Logo">
+        <img src="logo.png" alt="Chillspot Contact" style="height: 45px; border-radius: 8px;">
       </div>
-
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -112,34 +21,45 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="content">
-      <h1>Contact Us</h1>
+    <!-- WRAP IN .container -->
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <p>Questions? Reservations? Let's talk.</p>
 
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <p><strong>Phone:</strong> (123) 456-7890</p>
-        <p><strong>Email:</strong> info@example.com</p>
-        <p><strong>Address:</strong> 123 Main Street, Your City, Country</p>
-      </div>
+      <div class="contact-grid">
+        <!-- Contact Info Card -->
+        <div class="contact-card">
+          <h3>📞 Quick Contact</h3>
+          <p><strong>Phone:</strong> +63 999 123 4567</p>
+          <p><strong>Email:</strong> hello@chillspot.ph</p>
+          <p><strong>Address:</strong> 123 Foodie Street<br>Cebu City, Philippines 6000</p>
+        </div>
 
-      <!-- Social Media Links -->
-      <div class="social-links">
-        <a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a>
-        <a href="https://m.me/YourPage" target="_blank" class="messenger">Messenger</a>
-      </div>
+        <!-- Social Links Card -->
+        <div class="social-card">
+          <h3>🌐 Follow Us</h3>
+          <a href="https://facebook.com/chillspotph" target="_blank" class="social-btn fb">
+            <span>Facebook</span>
+          </a>
+          <a href="https://m.me/chillspotph" target="_blank" class="social-btn messenger">
+            <span>Messenger</span>
+          </a>
+          <a href="https://instagram.com/chillspotph" target="_blank" class="social-btn ig">
+            <span>Instagram</span>
+          </a>
+        </div>
 
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <h2>Send us a message</h2>
-        <form>
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
+        <!-- Contact Form Card -->
+        <div class="form-card">
+          <h3>✉️ Send Message</h3>
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
 </html>
-
