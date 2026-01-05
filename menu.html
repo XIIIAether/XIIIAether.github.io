@@ -2,72 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Menu - Chillspot</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Menu</title>
-
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      /* Navigation bar */
-      nav {
-        background-color: #333;
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-      }
-
-      /* Logo image */
-      .logo img {
-        height: 40px;
-        width: auto;
-      }
-
-      /* Container for nav links */
-      .nav-links {
-        margin-left: auto;
-      }
-
-      /* Navigation links */
-      .nav-links a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-      }
-
-      .nav-links a:hover {
-        text-decoration: underline;
-      }
-
-      /* Page content */
-      .content {
-        padding: 20px;
-      }
-
-      /* Menu section */
-      .menu-item {
-        margin-bottom: 15px;
-      }
-
-      .menu-item h3 {
-        margin: 0;
-      }
-
-      .price {
-        color: #555;
-      }
-    </style>
+    <!-- ALL INLINE <style> DELETED - USE EXTERNAL CSS ONLY -->
   </head>
 
   <body>
     <!-- Navigation Bar -->
-    <nav>
+    <nav style="z-index: 1000; position: relative;">
       <div class="logo">
-        <img src="logo.png" alt="Website Logo">
+        <img src="logo.png" alt="Chillspot Logo" style="height: 45px; border-radius: 8px;">
       </div>
-
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -76,36 +21,38 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="content">
+    <!-- WRAP IN .container FOR GLASS EFFECT -->
+    <div class="container">
       <h1>Our Menu</h1>
-      <p>Check out our available items below.</p>
+      <p>Premium selection. Fresh daily.</p>
 
-      <div class="menu-item">
-        <h3>Item One <span class="price">$5.99</span></h3>
-        <p>Short description of the item.</p>
-      </div>
+      <!-- Menu Grid - Enhanced with CSS classes -->
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>tapsilog <span class="price">100</span></h3>
+          <p>Basta silog.</p>
+        </div>
 
-      <div class="menu-item">
-        <h3>Item Two <span class="price">$7.99</span></h3>
-        <p>Short description of the item.</p>
-      </div>
+        <div class="menu-item">
+          <h3>tapsilog <span class="price">100</span></h3>
+          <p>Basta silog.</p>
+        </div>
 
-      <div class="menu-item">
-        <h3>Item Three <span class="price">$9.99</span></h3>
-        <p>Short description of the item.</p>
-      </div>
+        <div class="menu-item">
+         <h3>tapsilog <span class="price">100</span></h3>
+          <p>Basta silog.</p>
+        </div>
 
-      <div class="menu-item">
-        <h3>Item Four <span class="price">$8.99</span></h3>
-        <p>Short description of the item.</p>
-      </div>
+        <div class="menu-item">
+          <h3>tapsilog <span class="price">100</span></h3>
+          <p>Basta silog.</p>
+        </div>
 
-      <div class="menu-item">
-        <h3>Item Five <span class="price">$6.99</span></h3>
-        <p>Short description of the item.</p>
+        <div class="menu-item">
+          <h3>tapsilog <span class="price">100</span></h3>
+          <p>Basta silog.</p>
+        </div>
       </div>
     </div>
   </body>
 </html>
-
