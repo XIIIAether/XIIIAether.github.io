@@ -2,60 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <title>Chillspot</title>
-
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      /* Navigation bar */
-      nav {
-        background-color: #333;
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-      }
-
-      /* Logo image */
-      .logo img {
-        height: 40px;   /* controls logo size */
-        width: auto;
-      }
-
-      /* Container for nav links */
-      .nav-links {
-        margin-left: auto;
-      }
-
-      /* Navigation links */
-      .nav-links a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-      }
-
-      .nav-links a:hover {
-        text-decoration: underline;
-      }
-
-      /* Page content */
-      .content {
-        padding: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- DELETE ALL INLINE <style> - IT KILLS EXTERNAL CSS -->
   </head>
 
   <body>
     <!-- Navigation Bar -->
-    <nav>
+    <nav style="z-index: 1000; position: relative;">
       <div class="logo">
-        <img src="logo.png" alt="Website Logo">
+        <img src="logo.png" alt="Chillspot Logo" style="height: 45px; border-radius: 8px;">
       </div>
-
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -64,16 +21,11 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="content">
-      <h1>This is Chillspot</h1>
-      <p>Cge na Doy Tagae nakog, image sa imuhang tindahan. para naa nakoy Logo nimo og background. mintras na layhan pakog dula.</p>
-      <p>dili lagi ni mag uga, akoa paning designan imahi ra jud akoang kinahanglan.</p>
+    <!-- WRAP CONTENT IN .container FOR BACKGROUND MAGIC -->
+    <div class="container">
+      <h1>Chillspot</h1>
+      <p>Welcome to Chillspot</p>
+      <p>cge na cge na</p>
     </div>
   </body>
 </html>
-
-
-
-
-
